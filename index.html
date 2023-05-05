@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lila's Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <br>
+    <br>
+    <br>
+</head>
+
+<body>
+
+
+    <nav>
+
+        <a href="./index.html"> <i class="fa fa-home"></i>Home</a>
+        <a href="./contact.html"><i class="fa fa-phone"></i>Contact</a>
+        <a href="./Jokes.html"> <i class="fa fa-puzzle-piece"></i>Joke Generator</a>
+        <a href="./blog.html"> <i class="fa fa-pencil"></i>Blog</a>
+        <a href="./thoughts.html"> <i class="fa fa-book"></i>Thought Generator</a>
+
+    </nav>
+
+
+    <header role="banner">
+        <h1 draggable="true" ondrag="myFunction()" class="main-heading"> Hi There I Am Lila </h1>
+        </p ondblclick="myFunction()" class="main-heading"> I am doing a coding class!</p>
+
+        <section class="purple-text">
+            I normally go to ARPS, it's a k-3 school! But this week I am going to a university for the week witch is so
+            It's a lot of fun!
+
+        </section>
+    </header>
+    <br>
+    <br>
+
+    <div class="main-content">
+
+        <h1 class="pfp" id="intro"> Here is my profile photo and an Intro about me</h1>
+        <br>
+
+        <p onclick="myFunction()" class=>I am doing a coding class for a week in the MCP! I have leraned so much already
+            now i can
+            code my own
+            website. I think that it's really cool that you get the chance to learn something new.
+        <p onclick="changeName()">Please improve intro </p>
+
+        <br>
+        <br>
+
+        <img src="Flower pfp.jpg" width="222" hight="222" alt="profile photo">
+
+        <br>
+        <br>
+        <br>
+
+        <h1>My Personal Blog ( Fun Facts )</h1>
+        <br>
+        <br>
+
+        <video controls loop width="333">
+            <source src="sunset-153976.mp4" type="video/mp4">
+        </video>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <a href="https://www.youtube.com/watch?v=B-MfwP_RmHY"> Here is my favourite new song!</a>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3>User Details Form</h3>
+    <form class="myForm" id="myForm">
+
+        <title>User Details Form</title>
+        <label for="First Name">First Name </label>
+        <input type="text" name="First Name" id="first-name" placeholder="Hey write your name...">
+
+        <br>
+        <br>
+
+
+        <label for="email"> Email </label>
+        <input type="email" name="email" id="email" placeholder="Hey write your email here...">
+
+        <br>
+        <br>
+
+
+        <label for="birthday"> Birthdaty </label>
+        <input type="date" name="Birthday" id="birthday">
+
+        <br>
+        <br>
+        <br>
+
+        <input type="submit" Value="Submit This Form">
+
+    </form>
+
+
+    <!-- Background Image -->
+    <section class="stories-section">
+        <center>
+            <h1>My program</h1>
+        </center>
+
+        <center></center>
+        <p> Students are fascinated by social media websites and other gaming websites. In this course we will develop a
+            small website from scratch. You will learn together the tools used to develop a website, how it can be share
+            with everyone and how can you open your own website in mobile browser. This is going to be an interesting
+            and an exciting course. Overall, we will cover below topics:
+
+            <br>
+        </p>
+        </center>
+
+        <center></center>
+        <p>1. How a website works? (Overview with case studies will help to understand the core)
+            <br>
+
+        </p>
+        </center>
+
+        <p>
+            2. Technologies used to make website.
+            <br>
+
+        </p>
+
+        <p>
+            3. Basics of JavaScript, HTML, CSS with minimal complexity.
+            <br>
+
+        </p>
+
+        <P>
+            4. Develop a small gaming website or a personal blog.
+
+            <br>
+
+        </P>
+
+        <p>
+            5. Future of software development and why coding is awesome ?
+            6. Roadmap to software development.
+            <br>
+
+        </p>
+
+        <p>
+            6. Roadmap to software development.
+            <br>
+
+        </p>
+    </section>
+
+    <section>
+
+        <div class="blog">
+
+            <h1>
+                Blog 1
+            </h1>
+            <p>
+                Come and read to learn more about me Lila!
+                <br>
+
+            </p>
+
+            <p>
+                -You will learn about my school
+                <br>
+            </p>
+
+            <p>
+
+                -My friends
+                <br>
+            </p>
+
+            <p>
+
+                -My family
+                <br>
+            </p>
+
+            <p>
+
+                -Where i live
+                <br>
+            </p>
+
+            <p>
+
+                -MCP
+                <br>
+            </p>
+            <a href="./blog.html">Read In Detail</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Created by Lila
+            Gagnon </p>
+    </footer>
+
+    <script>
+        var first_name = "Lila";
+        var last_name = "Gagnon";
+
+        function calculateSum(firstNumber, secondNumber) {
+            var sumOfTwoNumbers = firstNumber + secondNumber;
+
+            return sumOfTwoNumbers;
+        }
+
+        var sum = calculateSum(5, 10)
+        console.log(sum)
+
+
+        var heartEmoji = "💖";
+        console.log(heartEmoji);
+
+
+        function myFunction() {
+            var heartEmoji = "💖"
+            console.log(heartEmoji);
+            alert("Hey please don't click")
+        }
+
+
+        function changeName(customText) {
+            document.getElementById("intro").innerHTML = "Hey Lila Here";
+        }
+
+
+        console.log(first_name)
+        console.log(last_name)
+
+        document.getElementById("myForm").addEventListener("submit", handleFormSubmit)
+
+        function handleFormSubmit(event) {
+            event.preventDefault()
+
+            var name = document.getElementById("first-name").value
+            var email = document.getElementById("email").value
+            var birthday = document.getElementById("birthday").value
+
+            console.log(name)
+            console.log(email)
+            console.log(birthday)
+
+            document.getElementById("intro").innerHTML = name
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+h1 {
+    color: palevioletred;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+}
+
+.main-heading {
+    color: plum;
+}
+
+.purple-text {
+    color: rgb(149, 104, 189);
+}
+
+p {
+    transition: all 2s;
+}
+
+.pfp {
+
+    transition: all 2s;
+    /* Styling Borders */
+
+    border-width: 5px;
+    border-color: blueviolet;
+    border-style: outset;
+    border-radius: 15px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+
+    padding: 30px 100px;
+    /* margin: 20px;*/
+
+    margin: 40px 100px;
+    /* margin left: 20px;
+   margin-right: 50px; */
+
+    box-shadow: 0 5px 8px 2px rgba(83, 83, 83, 0.1);
+}
+
+body {
+    background-color: #ffebfd;
+    margin: 0px 24px;
+}
+
+p:hover {
+    background-color: #b34aa8;
+    box-shadow: 0 5px 8px 2px rgb(204, 121, 204);
+    transition: all 2s;
+}
+
+img:hover {
+    box-shadow: 0 5px 8px 2px rgb(224, 148, 224);
+}
+
+p {
+    animation-name: bg-color-animation;
+    animation-duration: 3s;
+    text-align: justify;
+}
+
+
+@keyframes bg-color-animation {
+
+    25% {
+        background-color: rgb(255, 0, 170);
+    }
+
+    50% {
+        background-color: rgb(255, 127, 212);
+    }
+
+    75% {
+        background-color: rgb(187, 86, 145);
+    }
+
+    100% {
+        background-color: rgb(114, 32, 80);
+    }
+}
+
+
+.myForm {
+    border-width: 3px;
+    border-color: blueviolet;
+    border-style: solid;
+    border-radius: 15px;
+
+    padding: 20px;
+
+
+}
+
+.myForm:hover {
+    box-shadow: 0 5px 8px 2px rgb(204, 121, 204);
+}
+
+label {
+    padding: 20px;
+}
+
+input {
+    margin-top: 20px;
+
+    border-color: blueviolet;
+    border-width: 2px;
+    border-style: solid;
+
+    border-radius: 40px;
+    padding: 6px;
+
+}
+
+input [type=submit] {
+    border-radius: 0px;
+    background-color: #E2A1F1;
+    border: none;
+    color: black;
+}
+
+.stories-section {
+    /* background-image: url(./images/.Flowerpfp.jpg); */
+
+    /* background-image: url("./Flower.jpg");
+    width: 300px;
+    height: 300px; */
+
+
+    background-image: linear-gradient(to bottom, pink, purple);
+
+    height: 333px;
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    background-position: center;
+
+    border-radius: 15px;
+
+    padding: 0% 20%;
+    color: white;
+}
+
+nav {
+    border-color: #e73c7e;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 3px;
+
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+nav a i {
+    margin-right: 6px;
+    margin: opx 20px;
+    letter-spacing: 4px;
+    padding: 5px;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+#jokes {
+    border: solid 1px purple;
+    padding: 6px;
+    margin: 12px 0px;
+
+    font-style: italic;
+
+}
+
+.joke-button {
+    padding: 4px;
+    border: solid 1px rgb(190, 50, 97);
+}
+
+.blog {
+    border-color: #e73c7e;
+    border-radius: 15px;
+    border-style: solid;
+    margin-top: 24px;
+
+    padding: 8px;
+}
+
+.blog1 {
+    border-color: #cf20e6;
+    border-radius: 15px;
+    border-style: solid;
+
+    padding: 8px;
+}
+
+.thought-button {
+    padding: 4px;
+    border: solid 1px rgb(190, 50, 97);
+}
+
+#thought {
+    border: solid 1px purple;
+    padding: 6px;
+    margin: 12px 0px;
+
+    font-style: italic;
+
+}

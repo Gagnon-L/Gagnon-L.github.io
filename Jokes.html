@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+
+
+<body>
+    <nav>
+
+        <a href="./index.html"> <i class="fa fa-home"></i>Home</a>
+        <a href="./contact.html"><i class="fa fa-phone"></i>Contact</a>
+        <a href="./Jokes.html"> <i class="fa fa-puzzle-piece"></i>Joke Generator</a>
+        <a href="./blog.html"> <i class="fa fa-pencil"></i>Blog</a>
+        <a href="./thoughts.html"> <i class="fa fa-book"></i>Thought Generator</a>
+
+    </nav>
+    <section>
+        <h1 class="joke-title">Joke Generator</h1>
+        <div id="jokes">
+            Hey how are you ?
+        </div>
+
+        <button class="joke-button" onclick="generateJoke()">Generate a Joke</button>
+    </section>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+<script>
+    var jokeArray = [
+        "What is a computer's favorite snack? A. Computer chips.",
+        "Hell vs He'll - Autocorrect can go straight to he’ll",
+        "Did you hear about the monkeys who shared an Amazon account? They were Prime mates",
+        "Q. What is the biggest lie in the entire universe? A. I have read and agree to the Terms & Conditions",
+        "Why are iPhone chargers not called Apple Juice?!",
+        "Q. Why did the PowerPoint Presentation cross the road? A. To get to the other slide.",
+        "Q: Why did the computer show up at work late? A: It had a hard drive.",
+        "Person 1: Hey Rachyl, do you remember me? Person 2: Wrong number. Person 1: What’s your number then?",
+        "I feel like carp today Yeah, you look a little fishy",
+        "Q: What do you call an iPhone that isn't kidding around? A: Dead Siri-ous",
+        "You know you're texting too much when... ...you try to text, but you're on a landline.",
+        "The guy who invented auto-correct for smart phones passed away today. Restaurant in peace.",
+
+    ]
+
+    function generateJoke() {
+        var randomNumber = Math.random() * 11;
+
+        var randomInteger = Math.floor(randomNumber);
+
+        var randomJoke = jokeArray[randomInteger]
+
+        document.getElementById("jokes").innerHTML = randomJoke;
+    }
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</html>

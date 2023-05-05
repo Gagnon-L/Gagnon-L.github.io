@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+
+
+<body>
+    <nav>
+
+        <a href="./index.html"> <i class="fa fa-home"></i>Home</a>
+        <a href="./contact.html"><i class="fa fa-phone"></i>Contact</a>
+        <a href="./Jokes.html"> <i class="fa fa-puzzle-piece"></i>Joke Generator</a>
+        <a href="./blog.html"> <i class="fa fa-pencil"></i>Blog</a>
+        <a href="./thoughts.html"> <i class="fa fa-book"></i>Thought Generator</a>
+
+    </nav>
+    <section>
+        <h1 class="thoughts-title">Thought Generator</h1>
+        <div id="thought">
+            Hey how are you feeling ?
+        </div>
+
+        <button class="thought-button" onclick="generateThought()">Generate a Thought</button>
+    </section>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+<script>
+    var thoughtArray = [
+        "“All our dreams can come true, if we have the courage to pursue them.” —Walt Disney",
+        "“The secret of getting ahead is getting started.” —Mark Twain",
+        "“I’ve missed more than 9,000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life, and that is why I succeed.” —Michael Jordan",
+        "“Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.” —Mary Kay Ash",
+        "“The best time to plant a tree was 20 years ago. The second best time is now.” ―Chinese Proverb",
+        "“It’s hard to beat a person who never gives up.” —Babe Ruth",
+        "“If people are doubting how far you can go, go so far that you can’t hear them anymore.” —Michele Ruiz",
+        "“We need to accept that we won’t always make the right decisions, that we’ll screw up royally sometimes―understanding that failure is not the opposite of success, it’s part of success.” ―Arianna Huffington",
+        "“Write it. Shoot it. Publish it. Crochet it. Sauté it. Whatever. MAKE.” —Joss Whedon",
+        "“You’ve gotta dance like there’s nobody watching, love like you’ll never be hurt, sing like there’s nobody listening, and live like it’s heaven on earth.” —William W. Purkey",
+        "“Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.”―Neil Gaiman",
+        "“Everything you can imagine is real.”―Pablo Picasso",
+        "“When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us.” ―Helen Keller",
+        "“Do one thing every day that scares you.” ―Eleanor Roosevelt",
+        "“It’s no use going back to yesterday, because I was a different person then.” ―Lewis Carroll",
+        "“Smart people learn from everything and everyone, average people from their experiences, stupid people already have all the answers.” —Socrates",
+        "“It’s Monday … time to motivate and make dreams and goals happen. Let’s go!” —Heather Stillufsen",
+        "“Oh! It’s Friday again. Share the love that was missing during the week. In a worthy moment of peace and bliss.” —S. O’Sade",
+        "“The hard days are what make you stronger.” ―Aly Raisman",
+        "“If you believe it’ll work out, you’ll see opportunities. If you don’t believe it’ll work out, you’ll see obstacles.” ―Wayne Dyer",
+        "“I now tried a new hypothesis: It was possible that I was more in charge of my happiness than I was allowing myself to be.” ―Michelle Obama",
+        "“Sometimes when you’re in a dark place you think you’ve been buried but you’ve actually been planted.” ―Christine Caine",
+
+    ]
+
+    function generateThought() {
+        var randomNumber = Math.random() * 21;
+
+        var randomInteger = Math.floor(randomNumber);
+
+        var randomJoke = thoughtArray[randomInteger]
+
+        document.getElementById("thought").innerHTML = randomJoke;
+    }
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</html>
